@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>CafeNextFramework.Helpers</id>
+    <version>1.0.0</version>
+    <title>CafeNextFramework.Helpers</title>
+    <authors>Capgemini</authors>
+    <owners>Capgemini</owners>
+    <licenseUrl>http://www.sca.com</licenseUrl>
+    <projectUrl>http://www.sca.com</projectUrl>
+	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Cafe Next Framework Package</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>CafeNextFramework.Helpers</tags>
+	<dependencies>
+		<dependency id="CafeNextFramework" version="0.0.1.1" />
+   </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\CafeNextFramework.Helpers.dll" target="lib\net452" />	
+  </files>   
+  
+
+</package>

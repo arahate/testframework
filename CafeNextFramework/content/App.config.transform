@@ -1,0 +1,29 @@
+﻿<configuration> 
+ <configSections>
+    <sectionGroup name="CafeNextFramework" type ="CafeNextFramework.CafeConfiguration.CafeNextConfiguration,CafeNextFramework">
+      <section name="Reference" type ="CafeNextFramework.CafeConfiguration.ReferenceConfiguration,CafeNextFramework" ></section>
+      <section name="XMLReporter" type ="CafeNextFramework" ></section>
+    </sectionGroup>
+  </configSections>
+  <CafeNextFramework>
+    <!--Reference element
+        LogFolder: Folder to store Screenshots, XML reports and HTMLRport
+        ScreenshotLevel: All, Error -> Value to capture screenshot level on all TestResutlLogger Methods -->
+    <Reference LogFolder="../../Data/Logs" ScreenShotLevel="All" ConsolidatedReportXsltPath ="../../Data/ConsolidatedReport.xslt" >
+      <ReferenceInput FilePath="../../reference/MasterSheet.xls" Sheet="Sheet1"  />
+      <Markets>
+        <!--
+        Market information to run different market urls.
+        <Market Country="Russia-RU" Url="http://www.libresse.ru"/>
+        <Market Country="UK-EN" Url="http://www.bodyform.co.uk"/>
+        -->
+      </Markets>
+      <Reporters>
+        <Reporter-ref ref="XMLReporter"/>
+      </Reporters>
+    </Reference>
+    <XMLReporter type="CafeNextFramework.Reporting.XMLReporter" >
+      <XsltPath Value ="../../reference/XmlToHtml.xslt"/>
+    </XMLReporter>
+  </CafeNextFramework>
+</configuration>

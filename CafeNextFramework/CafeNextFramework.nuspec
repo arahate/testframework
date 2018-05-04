@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CafeNextFramework</id>
+    <version>1.0.0</version>
+    <title>CafeNextFramework</title>
+    <authors>Capgemini</authors>
+    <owners>Capgemini</owners>
+    <licenseUrl>http://www.sca.com</licenseUrl>
+    <projectUrl>http://www.sca.com</projectUrl>
+	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Cafe Next Framework Package</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>CafeNextFramework</tags>
+	  <dependencies>
+		<dependency id="NPOI" version="2.3.0" />
+		<dependency id="Selenium.Support" version="3.9.1" />
+		<dependency id="Selenium.WebDriver" version="3.9.1" />
+		<dependency id="Selenium.Chrome.WebDriver" version="2.35" />
+		<dependency id="WebDriverIEDriver64" version="2.45.0.0" />
+   </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\CafeNextFramework.dll" target="lib\net452" />
+    <file src="bin\Release\CafeNextFramework.dll" target="lib\net461" />
+    <file src="content\MasterSheet.xls" target="content\reference" />
+    <file src="content\XmlToHtml.xslt" target="content\reference" />
+    <file src="content\ConsolidatedReport.xslt" target="content\reference" />
+	 <file src="content\App.config.transform" target="content" />
+  </files>   
+
+
+</package>
+
